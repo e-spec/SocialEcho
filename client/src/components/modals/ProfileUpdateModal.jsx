@@ -29,6 +29,28 @@ const suggestedInterests = [
   "🧘‍♀️ Yoga",
   "🌱 Sustainability",
   "📝 Writing",
+  "🍕 Cooking",
+  "🎬 Film Production",
+  "🎤 Podcasts",
+  "🎵 Concerts",
+  "🏀 Basketball",
+  "⚽ Football",
+  "🎾 Tennis",
+  "🏊 Swimming",
+  "🧗 Climbing",
+  "🚴 Cycling",
+  "🧵 Fashion",
+  "💄 Beauty",
+  "🏠 Interior Design",
+  "🌿 Gardening",
+  "🐶 Pet Care",
+  "✈️ Adventure",
+  "🏔️ Hiking",
+  "🎭 Theater",
+  "🎪 Performance Art",
+  "🎸 Band/Music",
+  "📱 Social Media",
+  "💻 Coding",
 ];
 
 const ProfileUpdateModal = ({ user, isOpen, onClose }) => {
@@ -179,11 +201,10 @@ const ProfileUpdateModal = ({ user, isOpen, onClose }) => {
                 <button
                   disabled={isUpdating}
                   type="button"
-                  className={`inline-flex w-full justify-center rounded-md border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm focus:outline-none sm:ml-3 sm:w-auto sm:text-sm ${
-                    isUpdating
-                      ? "cursor-not-allowed bg-gray-400"
-                      : "bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                  }`}
+                  className={`inline-flex w-full justify-center rounded-md border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm focus:outline-none sm:ml-3 sm:w-auto sm:text-sm ${isUpdating
+                    ? "cursor-not-allowed bg-gray-400"
+                    : "bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    }`}
                   onClick={handleUpdateProfile}
                 >
                   {isUpdating ? (
